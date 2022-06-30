@@ -8,13 +8,13 @@ int main()
         count=0;
         if(n%i==0)
         {
-            for(j=1;j<=i;j++)
+            for (j=1;j<=i;j++)
             {
                 if(i%j==0)
                 count++;
             }
         }
-        if(count!=2 && count>0)
+        if(count!=2&&count>0)
         {
             m++;
         }
