@@ -2,7 +2,7 @@
 int main()
 {
     int n,m,i,j,sum=0;
-    scanf("%d %d",&n,&m);
+    scanf("%d%d",&n,&m);
     int arr[n][m];
     for(i=0;i<n;i++)
     {
@@ -15,13 +15,13 @@ int main()
     {
         for(j=0;j<m;j++)
         {
-            if(i==0||j==0||i==n-1||j==m-1)
+            if(i==0||j==m-1||j==0||i==n-1)
             {
                 continue;
             }
             else
             {
-                sum=sum+arr[i][j];
+                sum+=arr[i][j];
             }
         }
     }
